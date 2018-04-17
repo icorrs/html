@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title> My fist web page</title>
+
+        <!--css-->
+        <link href='css/styles.css' type='text/css' rel='stylesheet'>
+    </head>
+    <body>
+
+        <!--结构化标记和语义化标记-->
+        <h1> welcome to my first web page</h1>
+        <p><a href='#level 3'>to level3</a></p>
+        <p> this is an <b>html</b> page i created in vsc.</p1>
+        <h2> this is level 2 heading</h2>
+        <h2> this is level 2 heading 2</h2>
+        <p> <strong>on</strong>on the 4<sup>th</sup> of september you will learn about e=mc<sup>2</sup></p>
+        <hr />
+        <p>the <em>last</em> amount of co<sub>2</sub> in the atmosphere<br /> grew by 2ppm in 2009<sub>1</sub>.</p>
+        <blockquote cite="www.baidu.com"> do you know this</blockquote>
+        <p><abbr title="Natonal Aeronautics and Space Administration">NASA</abbr> do some crazy space stuff.</p>
+        <p>a bar foo <del>car</del> <ins>dog</ins> </p>
+
+        
+        <!--id索引-->
+        <h3 id='level 3'> this is level 3 heading</h3>
+
+
+        <!--列表-->
+        <ol list-style-type:upper roman>
+            <li>first line</li>
+            <ol>
+                <li> first sub-line</li>
+                <li>second sub-line</li>
+            </ol>
+            <li>second line</li>
+            <li>third line</li>
+        </ol>
+
+        
+        <!--链接-->
+        <p><a href="http://www.w3school.com.cn"> w3c </a></p>
+        <p><a href='music/music_index.html' target='_blank'>music index</a></p>
+
+
+        <!--图像-->
+        <br />
+        <img src='images/image01.jpg' alt='mengxiaomei' title='meng' height='307' width='230'>
+        <figcaption>萌小美</figcaption>
+        <br />
+
+        <!--表格-->
+        <table>
+            <tr>
+                <th></th>
+                <th scope='col'>sunday</th>
+                <th scope='col'>satuday</th>
+            </tr>
+            <tr>
+                <th scope='row'>tickets sold</th>
+                <td>120</td>
+                <td>135</td>
+            </tr>
+            <tr>
+                <th scope='row'>total sold</th>
+                <td>600</td>
+                <td>300</td>
+            </tr>
+        </table>
+        <br />
+
+        <!--表单-->
+        <form action='',method='get'>
+            <fieldset>
+                <legend>
+                    your details:
+                </legend>
+                <label>
+                    name:<input type='text' name='name'>
+                </label>
+                <br />
+                <label>
+                    email:<input type='email' name='email'>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    your review:
+                </legend>
+                <p>
+                    <label for='hear-about'>how did you hear about us?</label>
+                    <select name='refer' id='hear-about'>
+                        <option value='google'>google</option>
+                        <option value='friend'>friend</option>
+                    </select>
+                </p>
+                would you visit again?
+                <br />
+                <label>
+                    <input type='radio' name='rating' value='yes'>
+                    yes
+                </label>
+                <label>
+                    <input type='radio' name='rating' value='no'>
+                    no
+                </label>
+                <label for='comments'>comments:
+
+                </label>
+                <br />
+                <textarea rows='4' cols='40' id='comments'>
+                </textarea>
+                <br />
+                <label>
+                    <input type='checkbox' name='subscribe' checked='checked'>
+                    sign me up
+                </label>
+            </fieldset>
+        </form>
+
+        <!--OTHER-->
+        <iframe src='second_test.html',width='600',height='500'></iframe>
+        <br />
+        &lt; &lsquo;
+
+
+        <!--video audio-->
+        <div>
+            <video src='video/MVNine Muses -Wild  - MV - Tai - .mp4'
+                poster='images/wild.jpg'
+                width='400' height='225'
+                preload
+                controls
+                loop>
+            </video>
+            <br />
+            <audio src='audio/Hotschedules_-Facetune_.mp3'
+                controls preload loop>
+            <p>audio</p>
+            </audio>
+        </div>
+
+    </body>
+</html>
