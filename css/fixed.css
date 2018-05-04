@@ -1,0 +1,28 @@
+body {
+    width:960px;
+    margin:0 auto;
+}
+
+#content {
+    overflow:auto;
+    height:100%
+}
+
+li {
+    display:inline;
+    padding:5px;
+}
+
+#nav,#feature,#footer {
+    background-color:#efefef;
+    padding:10px;
+    margin:10px;
+}
+
+.article {
+    background-color:#efefef;
+    width:300px;
+    float:left;
+    margin:10px;
+}
+

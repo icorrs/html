@@ -6,10 +6,18 @@
         <link href='css/styles.css' type='text/css' rel='stylesheet'>
     </head>
     <body>
+        <div class='nav'>
+                <!--列表-->
+                <ol list-style-type:upper roman>
+                        <li><a href='float_test.html'>float test</a></li>
+                        <li><a href='html5.html'>html5 web</a></li>
+                        <li><a href=''></a>third line</li>
+                </ol>
+        </div>
 
         <!--结构化标记和语义化标记-->
-        <h1> welcome to my first web page</h1>
-        <p><a href='#level 3'>to level3</a></p>
+        <p class='firstline'><a href='#level 3'>to level3</a></p>
+        <p><a href='#video zone'>to video zone</a></p>
         <p> this is an <b>html</b> page i created in vsc.</p1>
         <h2> this is level 2 heading</h2>
         <h2> this is level 2 heading 2</h2>
@@ -25,16 +33,7 @@
         <h3 id='level 3'> this is level 3 heading</h3>
 
 
-        <!--列表-->
-        <ol list-style-type:upper roman>
-            <li>first line</li>
-            <ol>
-                <li> first sub-line</li>
-                <li>second sub-line</li>
-            </ol>
-            <li>second line</li>
-            <li>third line</li>
-        </ol>
+
 
         
         <!--链接-->
@@ -43,27 +42,38 @@
 
 
         <!--图像-->
-        <br />
-        <img src='images/image01.jpg' alt='mengxiaomei' title='meng' height='307' width='230'>
-        <figcaption>萌小美</figcaption>
-        <br />
+        <div class='imagepart'>
+             <div class='imagezone01'>
+                <figure>
+                    <img src='images/image01.jpg' alt='mengxiaomei' title='meng' height='307' width='230'>
+                    <figcaption>meng01</figcaption>
+                </figure>
+            </div> 
+            <div class='imagezone02'>
+                <figure>
+                    <img src='images/image02.jpg' alt='mengxiaomei02' title='men' height='307' width='230'>
+                    <figcaption>meng02</figcaption>
+                </figure>        
+            </div>
+        </div>
+
 
         <!--表格-->
         <table>
-            <tr>
-                <th></th>
-                <th scope='col'>sunday</th>
-                <th scope='col'>satuday</th>
+            <tr class='tb_title'>
+                <th class='column'></th>
+                <th class='column'>sunday is perfect</th>
+                <th class='column'>satuday</th>
             </tr>
             <tr>
-                <th scope='row'>tickets sold</th>
-                <td>120</td>
-                <td>135</td>
+                <th class='index'>tickets sold</th>
+                <td class='money'>120</td>
+                <td class='money'>135</td>
             </tr>
-            <tr>
-                <th scope='row'>total sold</th>
-                <td>600</td>
-                <td>300</td>
+            <tr class='even'>
+                <th class='index'>total sold</th>
+                <td class='money'>600</td>
+                <td class='money'></td>
             </tr>
         </table>
         <br />
@@ -93,21 +103,24 @@
                         <option value='friend'>friend</option>
                     </select>
                 </p>
-                would you visit again?
+               
+                <div class='visit'>
+                        would you visit again?
+                        <br />
+                        <label>
+                            <input type='radio' name='rating' value='yes'>
+                                yes
+                        </label>
+                        <label>
+                            <input type='radio' name='rating' value='no'>
+                            no
+                        </label>
+                </div>
                 <br />
-                <label>
-                    <input type='radio' name='rating' value='yes'>
-                    yes
-                </label>
-                <label>
-                    <input type='radio' name='rating' value='no'>
-                    no
-                </label>
                 <label for='comments'>comments:
-
                 </label>
                 <br />
-                <textarea rows='4' cols='40' id='comments'>
+                <textarea columns='4' cols='40' id='comments'>
                 </textarea>
                 <br />
                 <label>
@@ -118,22 +131,30 @@
         </form>
 
         <!--OTHER-->
-        <iframe src='second_test.html',width='600',height='500'></iframe>
+        <iframe src='second_test.html',width='900',height='900'></iframe>
         <br />
+
+
         &lt; &lsquo;
 
 
         <!--video audio-->
-        <div>
-            <video src='video/MVNine Muses -Wild  - MV - Tai - .mp4'
+        <div id='video zone'>
+            <video src='c:/users/mzj/desktop/temppy/html_css_js/video/MVNine Muses -Wild  - MV - Tai - .mp4'
                 poster='images/wild.jpg'
-                width='400' height='225'
+                width='800' height='400'
                 preload
                 controls
                 loop>
             </video>
+            <video src='c:/users/mzj/desktop/temppy/html_css_js/video/Taylor.mp4'
+                 width='800' height='400'
+                 preload
+                 controls
+                 loop>
+            </video>
             <br />
-            <audio src='audio/Hotschedules_-Facetune_.mp3'
+            <audio src='c:/users/mzj/desktop/temppy/html_css_js/audio/Hotschedules_-Facetune_.mp3'
                 controls preload loop>
             <p>audio</p>
             </audio>

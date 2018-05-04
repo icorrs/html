@@ -1,0 +1,79 @@
+body {
+    line-height:1.4em;
+    margin:0px;
+    text-align:center;
+}
+
+
+.wrapper {
+    width:1100px;
+    margin:20px auto 20px auto;
+    background-color:#ffffff;
+}
+
+header {
+    border:2px solid #380c0c;
+    background-color:#efefef;
+    position:fixed;
+    top:0px;
+    width:1100px;
+}
+
+nav ul {
+    margin:0px auto 0px auto;
+    padding:5px 0px 0px 30px;
+}
+
+nav li {
+    display:inline;
+    margin-right:40px;
+}
+
+section.courses {
+    float:left;
+    width:800;
+    border-right:1px solid #eeeeee;
+    margin:100px 0px 0px 0px;
+    overflow:auto;
+}
+
+article {
+    overflow:auto;
+    text-align:left;
+    clear:both;
+}
+
+
+figure {
+    width:320px;
+    height:320px;
+    float:left;
+    clear:left;
+    margin:10px 10px 10px 0px;
+}
+
+figcaption {
+    text-align:center;
+}
+
+article hgroup h2 {
+    text-align:center;
+}
+
+aside {
+    width:280px;
+    float:left;
+    clear:right;
+    overflow:auto;
+    margin:100px 0px 0px 0px;
+}
+
+aside,footer,aside section a {
+    display:block;
+}
+
+footer {
+    clear:both;
+    margin:10px 0px 10px 0px;
+    background-color:#efefef;
+}
