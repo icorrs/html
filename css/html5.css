@@ -21,7 +21,7 @@ header {
 
 nav ul {
     margin:0px auto 0px auto;
-    padding:5px 0px 0px 30px;
+    padding:5px 0px 0px 5px;
 }
 
 nav li {
@@ -63,12 +63,11 @@ article hgroup h2 {
 aside {
     width:280px;
     float:left;
-    clear:right;
     overflow:auto;
     margin:100px 0px 0px 0px;
 }
 
-aside,footer,aside section a {
+aside section a {
     display:block;
 }
 
