@@ -12,7 +12,7 @@ if (hournow > 18) {
     greeting = 'welcome'
 }
 
-var el = document.getElementById('level 3')
+var el = document.getElementById('h2')
 el.textContent = greeting
 
 function hotel(name,total,ordered) {
@@ -39,3 +39,18 @@ innerhtmltest.innerHTML = '<b> page title:</b>'+document.title+'<br />'
 var today = new Date()
 var year1 = document.getElementById('year')
 year1.innerHTML =  today.getFullYear()+('3'==3)
+
+var list1 = document.getElementsByTagName('li')
+for(i=0;i<list1.length;i++) {
+    list1[i].textContent = i+':'+list1[i].textContent
+}
+
+var texttest = document.getElementById('level 3')
+var textcontent_word = texttest.textContent
+var nodevalue_word = texttest.nodeValue
+var msg = 'textcontent:'+textcontent_word+';'+'<br>'+'nodevalue:'+nodevalue_word+';'
+var scriptout = document.getElementById('level3 innerhtmlscript')
+var scriptout1 = document.getElementById('level3 textcontentscript')
+scriptout.innerHTML = msg
+scriptout1.textContent = msg
+
