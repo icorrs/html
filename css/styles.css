@@ -77,9 +77,12 @@ p {
 form {
     width:300;
     display:inline;
-    margin:10px auto 10px auto;
+    margin:10px 20px 10px auto;
 }
 
+label {
+    margin:10px auto 10px 10px;
+}
 
 table {
     empty-cells:show;
@@ -122,5 +125,6 @@ fieldset {
     width:500px;
     border:3px solid #4d0303;
     border-radius:10px;
+    text-align:left;
 }
 

@@ -8,7 +8,7 @@
     <body>
         <div class='nav'>
                 <!--列表-->
-                <ol list-style-type:upper roman>
+                <ol  list-style-type:upper roman>
                         <li><a href='float_test.html'>float test</a></li>
                         <li><a href='html5.html'>html5 web</a></li>
                         <li><a href=''></a>third line</li>
@@ -18,6 +18,12 @@
         <!--结构化标记和语义化标记-->
 
         <p class='firstline'><a href='#level 3'>to level3</a></p>
+
+        <ul id='li_box'>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+        </ul>
 
         <p><a href='#video zone'>to video zone</a></p>
         <p> this is an <b>html</b> page i created in vsc.</p1>
@@ -42,7 +48,7 @@
         <p id='windowsclass'></p>
         <p id='innerhtmltest'></p>
         <p id='year'></p>
-        <script src='js/add-content.js'></script>
+
 
         <!--链接-->
         <p><a href="http://www.w3school.com.cn"> w3c </a></p>
@@ -88,18 +94,36 @@
 
         <!--表单-->
         <form action='',method='get'>
-            <fieldset>
+            <fieldset id='countcal'>
+                <legend>
+                    满减折扣计算
+                </legend>
+                <label>
+                    每满：<input id='full' type='text'>
+                </label>
+                <label>
+                    减：<input id='countdown' type='text'>
+                </label>
+                <br>
+                <label>
+                    单价：<input id='price' type='text'>
+                </label>
+                <p id='cal'>result</p>
+            </fieldset>
+
+            <fieldset id='namecheck'>
                 <legend>
                     your details:
                 </legend>
                 <label>
-                    name:<input type='text' name='name'>
+                    name:<input id='username' type='text'  name='name' />
                 </label>
                 <br />
                 <label>
-                    email:<input type='email' name='email'>
+                    email:<input id='email' type='email' name='email'>
                 </label>
             </fieldset>
+
             <fieldset>
                 <legend>
                     your review:
@@ -167,6 +191,6 @@
             <p>audio</p>
             </audio>
         </div>
-
+        <script src='js/add-content.js'></script>
     </body>
 </html>
