@@ -45,6 +45,8 @@ for(i=0;i<list1.length;i++) {
     list1[i].textContent = i+':'+list1[i].textContent
 }
 
+
+//test diffrence between innerHTML textcontent nodevalue
 var texttest = document.getElementById('level 3')
 var textcontent_word = texttest.textContent
 var nodevalue_word = texttest.nodeValue
@@ -54,6 +56,8 @@ var scriptout1 = document.getElementById('level3 textcontentscript')
 scriptout.innerHTML = msg
 scriptout1.textContent = msg
 
+
+//check name or email length 
 function inputlenCheck(e,minilen) {
     if (e.target.value.length < minilen) {
         alert('input length less than'+minilen+',input again!')
@@ -63,7 +67,8 @@ function inputlenCheck(e,minilen) {
     }
 }
 
-/*var username1 = document.getElementById('username')
+/*
+var username1 = document.getElementById('username')
 //username1.onblur = inputlenCheck  
 
 username1.addEventListener('blur',function(e) {
@@ -82,6 +87,8 @@ namecheck1.addEventListener('focusout',function(e) {
 },false)
 
 
+
+//alert li when click li
 function showli(e) {
     if(e.target.nodeName.toLowerCase()=='li') {
         alert('li')
@@ -91,9 +98,12 @@ function showli(e) {
 var li_box1 = document.getElementById('li_box')
 li_box1.addEventListener('click',showli,false)
 
-function countdownCal(full,countdown,price) {
+
+//calculate countdown
+function countdownCal(e,full,countdown,price) {
     var num
     var realprice
+    var result = document.getElementById('result')
     if (full%price == 0) {
         num = full/price;
         realprice = (full-countdown)/num;
@@ -102,29 +112,55 @@ function countdownCal(full,countdown,price) {
         num = Math.floor(full/price)+1;
         realprice = (price*num-countdown)/num
     }
-    return '应购数量:'+num+';<br />折后单价:'+realprice
+    result.innerHTML = '应购数量:'+num+';<br />折后单价:'+realprice
 }
 
 var full
 var countdown
 var price
-var countdowncal1 = document.getElementById('cal')
 
+/* in this method,get the full countdown price not using event delegate
 var elfull = document.getElementById('full')
 elfull.addEventListener('input',function() {
     full = this.value;
-    countdowncal1.innerHTML = countdownCal(full,countdown,price)
+    //result.innerHTML = countdownCal(full,countdown,price)
 },false)
 
 var elcountdown =document.getElementById('countdown')
 elcountdown.addEventListener('input',function() {
     countdown = this.value;
-    countdowncal1.innerHTML = countdownCal(full,countdown,price)
+    //result.innerHTML = countdownCal(full,countdown,price)
 },false)
 
 var elprice =document.getElementById('price')
 elprice.addEventListener('input',function() {
     price = this.value;
-    countdowncal1.innerHTML = countdownCal(full,countdown,price)
+    //countdowncal.innerHTML = countdownCal(full,countdown,price)
 },false)
+*/
 
+// use event delegate to get value of full countdown and price 
+function getvalue(e) {
+    var idname = e.target.id;
+    switch (idname) {
+        case 'full':
+        full = e.target.value;
+        break;
+
+        case 'countdown':
+        countdown = e.target.value;
+        break;
+
+        case 'price':
+        price = e.target.value;
+        break;
+    }
+}
+
+var countcal = document.getElementById('countcal')
+countcal.addEventListener('input',getvalue,false)
+
+var calnow = document.getElementById('calnow')
+calnow.addEventListener('focusin',function(e) {
+    countdownCal(e,full,countdown,price)
+},false)
