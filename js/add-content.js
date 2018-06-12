@@ -100,7 +100,7 @@ li_box1.addEventListener('click',showli,false)
 
 
 //calculate countdown
-function countdownCal(e,full,countdown,price) {
+function countdownCal(full,countdown,price) {
     var num
     var realprice
     var result = document.getElementById('result')
@@ -119,27 +119,30 @@ var full
 var countdown
 var price
 
-/* in this method,get the full countdown price not using event delegate
+// in this method,get the full countdown price not using event delegate
 var elfull = document.getElementById('full')
-elfull.addEventListener('input',function() {
-    full = this.value;
-    //result.innerHTML = countdownCal(full,countdown,price)
+elfull.addEventListener('input',function(e) {
+    full = e.target.value;
+    countdownCal(full,countdown,price)
 },false)
 
 var elcountdown =document.getElementById('countdown')
-elcountdown.addEventListener('input',function() {
-    countdown = this.value;
-    //result.innerHTML = countdownCal(full,countdown,price)
+elcountdown.addEventListener('input',function(e) {
+    countdown = e.target.value;
+    countdownCal(full,countdown,price)
 },false)
 
+// use addeventListener can bond more than 1 function to the same event
 var elprice =document.getElementById('price')
-elprice.addEventListener('input',function() {
-    price = this.value;
-    //countdowncal.innerHTML = countdownCal(full,countdown,price)
+elprice.addEventListener('input',function(e) {
+    price = e.target.value;
 },false)
-*/
 
-// use event delegate to get value of full countdown and price 
+elprice.addEventListener('input',function() {
+    countdownCal(full,countdown,price)
+},false)
+
+/* use event delegate to get value of full countdown and price 
 function getvalue(e) {
     var idname = e.target.id;
     switch (idname) {
@@ -160,7 +163,10 @@ function getvalue(e) {
 var countcal = document.getElementById('countcal')
 countcal.addEventListener('input',getvalue,false)
 
+
 var calnow = document.getElementById('calnow')
-calnow.addEventListener('focusin',function(e) {
-    countdownCal(e,full,countdown,price)
+calnow.addEventListener('focusin',function() {
+    countdownCal(full,countdown,price)
 },false)
+*/
+

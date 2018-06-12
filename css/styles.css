@@ -128,3 +128,10 @@ fieldset {
     text-align:left;
 }
 
+#result {
+    text-align:center;
+}
+
+li.liclass {
+    background-color:#e4a00d;
+}
