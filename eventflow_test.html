@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>event flow test</title>
+    </head>
+    <body>
+        <ul id='ulid'>
+            <li id='liid'>li01</li>
+        </ul>
+        <script>
+            elul = document.getElementById('ulid')
+            elli = document.getElementById('liid')
+            elul.addEventListener('click',function() {
+                       alert('ulact')
+            },true)
+            elli.addEventListener('click',function() {
+                       alert('liact')
+            },true)
+        </script>
+    </body>
+</html>
