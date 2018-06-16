@@ -32,6 +32,9 @@ li {
     display:inline;
 }
 
+ul li {
+    display:block;
+}
 
 p.firstline {
     margin:80px 0px 0px 0px;

@@ -88,15 +88,13 @@ namecheck1.addEventListener('focusout',function(e) {
 
 
 
-//alert li when click li
+/*alert li when click li
 function showli(e) {
     if(e.target.nodeName.toLowerCase()=='li') {
         alert('li')
     }
 }
-
-var li_box1 = document.getElementById('li_box')
-li_box1.addEventListener('click',showli,false)
+*/
 
 
 //calculate countdown
@@ -119,30 +117,24 @@ var full
 var countdown
 var price
 
-// in this method,get the full countdown price not using event delegate
+/* in this method,get the full countdown price not using event delegate
 var elfull = document.getElementById('full')
 elfull.addEventListener('input',function(e) {
     full = e.target.value;
-    countdownCal(full,countdown,price)
 },false)
 
 var elcountdown =document.getElementById('countdown')
 elcountdown.addEventListener('input',function(e) {
     countdown = e.target.value;
-    countdownCal(full,countdown,price)
 },false)
 
-// use addeventListener can bond more than 1 function to the same event
 var elprice =document.getElementById('price')
 elprice.addEventListener('input',function(e) {
     price = e.target.value;
 },false)
+*/
 
-elprice.addEventListener('input',function() {
-    countdownCal(full,countdown,price)
-},false)
-
-/* use event delegate to get value of full countdown and price 
+// use event delegate to get value of full countdown and price 
 function getvalue(e) {
     var idname = e.target.id;
     switch (idname) {
@@ -168,5 +160,3 @@ var calnow = document.getElementById('calnow')
 calnow.addEventListener('focusin',function() {
     countdownCal(full,countdown,price)
 },false)
-*/
-
