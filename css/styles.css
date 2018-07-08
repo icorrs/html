@@ -33,7 +33,7 @@ li {
 }
 
 ul li {
-    display:block;
+    display:inline;
 }
 
 p.firstline {
@@ -90,11 +90,13 @@ label {
 table {
     empty-cells:show;
     border-collapse:collapse;
-    border-spacing:0px;
+    border-spacing:2px;
+    border:2px solid #000000;
 }
 
 th,td {
     padding:5px;
+    border:2px solid #000000;
 }
 
 td {

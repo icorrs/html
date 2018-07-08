@@ -40,11 +40,12 @@ var today = new Date()
 var year1 = document.getElementById('year')
 year1.innerHTML =  today.getFullYear()+('3'==3)
 
+/*
 var list1 = document.getElementsByTagName('li')
 for(i=0;i<list1.length;i++) {
     list1[i].textContent = i+':'+list1[i].textContent
 }
-
+*/
 
 //test diffrence between innerHTML textcontent nodevalue
 var texttest = document.getElementById('level 3')
@@ -98,6 +99,7 @@ function showli(e) {
 
 
 //calculate countdown
+
 function countdownCal(full,countdown,price) {
     var num
     var realprice
@@ -117,6 +119,7 @@ var full
 var countdown
 var price
 
+
 /* in this method,get the full countdown price not using event delegate
 var elfull = document.getElementById('full')
 elfull.addEventListener('input',function(e) {
@@ -133,6 +136,7 @@ elprice.addEventListener('input',function(e) {
     price = e.target.value;
 },false)
 */
+
 
 // use event delegate to get value of full countdown and price 
 function getvalue(e) {
@@ -155,8 +159,8 @@ function getvalue(e) {
 var countcal = document.getElementById('countcal')
 countcal.addEventListener('input',getvalue,false)
 
-
 var calnow = document.getElementById('calnow')
 calnow.addEventListener('focusin',function() {
     countdownCal(full,countdown,price)
 },false)
+

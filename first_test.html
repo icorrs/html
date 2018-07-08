@@ -24,8 +24,15 @@
             <li class='two'>b</li>
             <li class='three'>c</li>
         </ul>
+        <p id='four'>four</p>
 
-        <p id='four'>three</p>
+        <div id='newItemButton'>
+            <button href='#' id='showForm'>new item</button>
+        </div>
+        <form id='newItemForm'>
+            <input type='text' id='itemDescription'>
+            <input type='submit' id='addButton' value='add'>
+        </form>
 
         <p><a href='#video zone'>to video zone</a></p>
         <p> this is an <b>html</b> page i created in vsc.</p1>
@@ -38,6 +45,8 @@
         <blockquote cite="www.baidu.com"> do you know this</blockquote>
         <p><abbr title="Natonal Aeronautics and Space Administration">NASA</abbr> do some crazy space stuff.</p>
         <p>a bar foo <del>car</del> <ins>dog</ins> </p>
+        <p id='locload'>getlocation</p>
+        <p id='jsondata'>jsondata</p>
 
         
         <!--id索引-->
@@ -51,10 +60,35 @@
         <p id='innerhtmltest'></p>
         <p id='year'></p>
         <p id='jquerycss'>jquerycss</p>
+        <div id='xhrhtml'>
+            <a href='float_test.html'>float_test</a>
+        </div>
+        <section id='content'>
+            <div id='container'>container</div>
+        </section>
 
+        <div id='jqueryuitest'>
+            <h4>1st</h4>
+            <p>1stcontent</p>
+            <h4>2nd</h4>
+            <p>2ndcontent</p>
+            <ul>
+                <li><a href='#tab-1'>1st prize</a></li>
+                <li><a href='#tab-2'>2nd prize</a></li>
+            </ul>
+            <div id='tab-1'>1st prize content</div>
+            <div id='tab-2'>2nd prize content</div>
+        </div>
+
+        <form>
+            <label for='arrival date'>
+                date:<input type='text' id='arrival'>
+            </label>
+        </form>
+     
 
         <!--链接-->
-        <p><a href="http://www.w3school.com.cn"> w3c </a></p>
+        <p><a href="http://www.w3school.com.cn" id='w3c'> w3c </a></p>
         <p><a href='music/music_index.html' target='_blank'>music index</a></p>
 
 
@@ -96,27 +130,30 @@
         <br />
 
         <!--表单-->
-        <form action='',method='get'>
+        <form>
             <fieldset id='countcal'>
                 <legend>
                     满减折扣计算
                 </legend>
                 <label>
-                    每满：<input id='full' type='text'>
+                    每满：<input id='full' name='full' type='text'>
                 </label>
                 <label>
-                    减：<input id='countdown' type='text'>
+                    减：<input id='countdown' name=='countdown'  type='text'>
                 </label>
                 <br>
                 <label>
-                    单价：<input id='price' type='text'>
+                    单价：<input id='price' name='price' ctype='text'>
                 </label>
                 <label>
                     计算：<input id='calnow' type='text'>
                 </label>
+                <input id='submitcount' type='submit'>
                 <p id='result'>result</p>
             </fieldset>
-
+        </form>
+        
+        <form>
             <fieldset id='namecheck'>
                 <legend>
                     your details:
@@ -178,32 +215,41 @@
 
         <!--video audio-->
         <div id='video zone'>
-            <video src='c:/users/mzj/desktop/temppy/html_css_js/video/MVNine Muses -Wild  - MV - Tai - .mp4'
+            <video src='http://183.60.197.27/7/r/u/e/i/
+rueixhvcgelarasycgvmldrhsznbcn/he.yinyuetai.com/
+EE4F014ECED1DD384061A6F16AD8B9B1.flv?
+sc=6b7e8329ab567c21&br=3150&vid=659682&aid=7690&
+area=KR&vst=0&ptp=mv&rd=yinyuetai.com'
                 poster='images/wild.jpg'
                 width='800' height='400'
                 preload
                 controls
                 loop>
             </video>
-            <video src='c:/users/mzj/desktop/temppy/html_css_js/video/Taylor.mp4'
+            <video src='http://183.60.197.29/16/
+c/t/g/y/ctgyhkyzaomolaiwiumphmqzufuyfa/
+he.yinyuetai.com/EC970163EF04502FEA93ABB7BAC8A50D.mp4?
+sc=2c0edce4fa2fb59d&br=3096&vid=3229236&aid=7236&area=KR
+&vst=4&ptp=mv&rd=yinyuetai.com'
                  width='800' height='400'
                  preload
                  controls
                  loop>
             </video>
             <br />
-            <audio src='c:/users/mzj/desktop/temppy/html_css_js/audio/Hotschedules_-Facetune_.mp3'
+            <audio src='c:/users/mzj/desktop/temppy/html_css_js/
+audio/Hotschedules_-Facetune_.mp3'
                 controls preload loop>
             <p>audio</p>
             </audio>
         </div>
         
         
-        <script src='C:\Windows\System32\node_modules\jquery\dist\jquery.js'></script>
+        <script src='js/jquery.js'></script>
+        <script src='js/jquery-ui.js'></script>
         <script src='js/jquery-test.js'></script>
         
-
-        <script src='js/add-content.js'></script>
+        <!--<script src='js/add-content.js'></script>-->
        
     </body>
 </html>
