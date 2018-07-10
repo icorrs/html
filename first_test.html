@@ -4,6 +4,11 @@
 
         <!--css-->
         <link href='css/styles.css' type='text/css' rel='stylesheet'>
+        <script src='https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js'></script>
+
+
+
+
     </head>
     <body>
         <div class='nav'>
@@ -46,7 +51,24 @@
         <p><abbr title="Natonal Aeronautics and Space Administration">NASA</abbr> do some crazy space stuff.</p>
         <p>a bar foo <del>car</del> <ins>dog</ins> </p>
         <p id='locload'>getlocation</p>
+
+
         <p id='jsondata'>jsondata</p>
+
+        <div  ng-app='myApp' ng-controller='concretePrice'>
+        <table>
+            <tr>
+                <th>kind</th>
+                <th>price</th>
+                <th>proportion</th>
+            </tr>
+            <tr ng-repeat='session in sessions'>
+                <td>{{session.concrete_kind}}</td>
+                <td>{{session.price_of_concrete}}</td>
+                <td>{{session.concrete_actural_proportion}}</td>
+            </tr>
+        </table>
+        </div>
 
         
         <!--id索引-->
@@ -237,14 +259,8 @@ sc=2c0edce4fa2fb59d&br=3096&vid=3229236&aid=7236&area=KR
                  loop>
             </video>
             <br />
-            <audio src='c:/users/mzj/desktop/temppy/html_css_js/
-audio/Hotschedules_-Facetune_.mp3'
-                controls preload loop>
-            <p>audio</p>
-            </audio>
         </div>
-        
-        
+
         <script src='js/jquery.js'></script>
         <script src='js/jquery-ui.js'></script>
         <script src='js/jquery-test.js'></script>

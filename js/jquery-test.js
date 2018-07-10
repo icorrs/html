@@ -186,3 +186,15 @@ $('#locload').on('click',function() {
 $('#jqueryuitest').accordion();
 $('#jqueryuitest').tabs();
 $('#arrival').datepicker();
+
+
+//angularjs
+var app = angular.module('myApp',[]);
+app.controller('concretePrice',function($scope,$http) {
+    $http.get('data/concrete.json')
+    .success(function(data){
+        $scope.sessions = data;
+        console.log('loaded '+data.length+' items in concrete price')
+        console.warn('console warn')
+    })
+})

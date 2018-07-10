@@ -1,0 +1,74 @@
+[
+	{
+		"concrete_kind" : "C15",
+		"price_of_concrete" : 287.05,
+		"remaining_concrete_price" : 287.05,
+		"concrete_actural_proportion" : 0.948
+	},
+	{
+		"concrete_kind" : "C20",
+		"price_of_concrete" : 292.94,
+		"remaining_concrete_price" : 292.94,
+		"concrete_actural_proportion" : 0.948
+	},
+	{
+		"concrete_kind" : "C25",
+		"price_of_concrete" : 300.57,
+		"remaining_concrete_price" : 300.57,
+		"concrete_actural_proportion" : 0.948
+	},
+	{
+		"concrete_kind" : "C30",
+		"price_of_concrete" : 310.1,
+		"remaining_concrete_price" : 310.1,
+		"concrete_actural_proportion" : 0.948
+	},
+	{
+		"concrete_kind" : "C30水下",
+		"price_of_concrete" : 319.44,
+		"remaining_concrete_price" : 319.44,
+		"concrete_actural_proportion" : 1.1918
+	},
+	{
+		"concrete_kind" : "C40",
+		"price_of_concrete" : 341.65,
+		"remaining_concrete_price" : 341.65,
+		"concrete_actural_proportion" : 0.948
+	},
+	{
+		"concrete_kind" : "C40细石",
+		"price_of_concrete" : 341.65,
+		"remaining_concrete_price" : 341.65,
+		"concrete_actural_proportion" : 0.948
+	},
+	{
+		"concrete_kind" : "C50",
+		"price_of_concrete" : 421.76,
+		"remaining_concrete_price" : 421.76,
+		"concrete_actural_proportion" : 0.948
+	},
+	{
+		"concrete_kind" : "M10",
+		"price_of_concrete" : 258.59,
+		"remaining_concrete_price" : 258.59,
+		"concrete_actural_proportion" : 0.948
+	},
+	{
+		"concrete_kind" : "M20",
+		"price_of_concrete" : 258.59,
+		"remaining_concrete_price" : 258.59,
+		"concrete_actural_proportion" : 0.948
+	},
+	{
+		"concrete_kind" : "M7.5",
+		"price_of_concrete" : 251.69,
+		"remaining_concrete_price" : 251.69,
+		"concrete_actural_proportion" : 0.948
+	},
+	{
+		"concrete_kind" : "无",
+		"price_of_concrete" : null,
+		"remaining_concrete_price" : null,
+		"concrete_actural_proportion" : 0.948
+	}
+]
