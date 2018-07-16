@@ -158,12 +158,18 @@ $.getJSON('data/sub_contractor_account.json')
     '<th class="column">分包单位名称</th>'+
     '<th class="column">开户行</th>'+
     '<th class="column">银行账号</th></tr>';
-    $.each(data,function(key,val) {
-        var keyAdd = key+1
-        msg += '<tr>'+'<th>'+keyAdd+'</th>'+
+    var code = 1;
+    $.each(data,function(key,val) {      
+        if (val.sub_contractor_name!=null 
+            //&& val.sub_contractor_name.length>13
+            //&& val.sub_contractor_name.match(/^天津.+/)
+        ){
+        msg += '<tr>'+'<th>'+code+'</th>'+
         '<td>'+val.sub_contractor_name+'</td>'+
         '<td>'+val.bank_name+'</td>'+
-        '<td>'+val.bank_count+'</td>'+'</tr>'
+        '<td>'+val.bank_count+'</td>'+'</tr>';
+        code += 1
+        }
     })
     msg += '</table><hr>'
     $('#jsondata').html(msg);
@@ -198,3 +204,58 @@ app.controller('concretePrice',function($scope,$http) {
         console.warn('console warn')
     })
 })
+
+
+'mzj,zm'.split(',').forEach(function(name) {
+    console.log(name)
+})
+
+//use {jsonword:value,$element:$row} to filter row which can be showed.
+$(function() {
+    var $table = $('<table><tr><th>钢材类别</th><th>价格</th></tr></table>');
+    var rows = []
+    $.getJSON('data/price_of_steel.json')
+    .done(function(data) {
+        $.each(data,function(key,value) {
+            var $row = $('<tr></tr>')
+            $row.append($('<td></td>').text(value.steel_kind))
+            $row.append($('<td></td>').text(value.price_of_steel))
+            //save value to jsonword attr,save $row object to $element attr 
+            rows.push({jsonword:value,$element:$row})
+            if(value.price_of_steel!=null) {
+                $table.append($row)
+            }          
+        })
+        $('#steelprice').append($table);
+        //select which row to show by json value.
+        rows.forEach(function(row) {
+            if(row.jsonword.price_of_steel<4) {
+                row.$element.hide();
+            }
+        })          
+    });
+});
+
+
+
+//作用域与函数运行时间点
+function geta(a) {
+    return a+1
+}
+
+function area(a,b) {
+    var msg = ''; 
+    msg = msg+geta(a)+'*'+b+'='
+    return [a,b,geta(a)*b,msg];
+}
+
+console.log(area(3,6)[3]+area(3,6)[2])
+
+
+var vartest = ''
+function changevar() {
+    vartest += 'changevaradd'
+}
+console.log('vartestbefore:'+vartest)
+changevar()
+console.log('vartestafter:'+vartest)

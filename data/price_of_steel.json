@@ -1,0 +1,56 @@
+[
+	{
+		"steel_kind" : "篦子",
+		"price_of_steel" : 4.449,
+		"remaining_steel_price" : 4.449,
+		"steel_actural_proportion" : 1.0188
+	},
+	{
+		"steel_kind" : "槽钢",
+		"price_of_steel" : 4.449,
+		"remaining_steel_price" : 4.449,
+		"steel_actural_proportion" : 1.0188
+	},
+	{
+		"steel_kind" : "钢板",
+		"price_of_steel" : 4.449,
+		"remaining_steel_price" : 4.449,
+		"steel_actural_proportion" : 1.0188
+	},
+	{
+		"steel_kind" : "钢绞线",
+		"price_of_steel" : 5.91,
+		"remaining_steel_price" : 5.91,
+		"steel_actural_proportion" : 1.0188
+	},
+	{
+		"steel_kind" : "钢筋",
+		"price_of_steel" : 4.0343,
+		"remaining_steel_price" : 4.0343,
+		"steel_actural_proportion" : 1.0188
+	},
+	{
+		"steel_kind" : "钢筋网",
+		"price_of_steel" : 3.952,
+		"remaining_steel_price" : 3.952,
+		"steel_actural_proportion" : 1.0188
+	},
+	{
+		"steel_kind" : "声测管",
+		"price_of_steel" : 14.3,
+		"remaining_steel_price" : 14.3,
+		"steel_actural_proportion" : 1.0188
+	},
+	{
+		"steel_kind" : "无",
+		"price_of_steel" : null,
+		"remaining_steel_price" : null,
+		"steel_actural_proportion" : 1.0188
+	},
+	{
+		"steel_kind" : "铸铁",
+		"price_of_steel" : 2,
+		"remaining_steel_price" : 2,
+		"steel_actural_proportion" : 1.041
+	}
+]

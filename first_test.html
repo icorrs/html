@@ -7,8 +7,6 @@
         <script src='https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js'></script>
 
 
-
-
     </head>
     <body>
         <div class='nav'>
@@ -56,7 +54,7 @@
         <p id='jsondata'>jsondata</p>
 
         <div  ng-app='myApp' ng-controller='concretePrice'>
-        <table>
+        <table id='concretepricetable'>
             <tr>
                 <th>kind</th>
                 <th>price</th>
@@ -68,6 +66,10 @@
                 <td>{{session.concrete_actural_proportion}}</td>
             </tr>
         </table>
+        </div>
+
+        <div id='steelprice'>
+            steel_price
         </div>
 
         
@@ -269,3 +271,4 @@ sc=2c0edce4fa2fb59d&br=3096&vid=3229236&aid=7236&area=KR
        
     </body>
 </html>
+
